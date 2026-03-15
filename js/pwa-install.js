@@ -5,8 +5,6 @@
     e.preventDefault();
     deferredPrompt = e;
     setTimeout(showPWABanner, 3000);
-    const heroBtn = document.getElementById('heroInstallBtn');
-    if (heroBtn) heroBtn.style.display = 'inline-flex';
   });
 
   window.addEventListener('appinstalled', () => {
@@ -16,16 +14,26 @@
     if (heroBtn) heroBtn.style.display = 'none';
   });
 
+  // hero 버튼 클릭
   document.addEventListener('DOMContentLoaded', () => {
+    // 이미 설치된 경우 버튼 숨김
+    if (window.matchMedia('(display-mode: standalone)').matches) {
+      const heroBtn = document.getElementById('heroInstallBtn');
+      if (heroBtn) heroBtn.style.display = 'none';
+      return;
+    }
     const heroBtn = document.getElementById('heroInstallBtn');
     if (heroBtn) {
       heroBtn.addEventListener('click', () => {
-        if (!deferredPrompt) return;
-        deferredPrompt.prompt();
-        deferredPrompt.userChoice.then(() => {
-          deferredPrompt = null;
-          heroBtn.style.display = 'none';
-        });
+        if (deferredPrompt) {
+          deferredPrompt.prompt();
+          deferredPrompt.userChoice.then(() => {
+            deferredPrompt = null;
+            heroBtn.style.display = 'none';
+          });
+        } else {
+          alert('주소창 오른쪽의 설치 아이콘(⊕)을 클릭해 홈 화면에 추가하세요.');
+        }
       });
     }
   });
