@@ -5,11 +5,29 @@
     e.preventDefault();
     deferredPrompt = e;
     setTimeout(showPWABanner, 3000);
+    const heroBtn = document.getElementById('heroInstallBtn');
+    if (heroBtn) heroBtn.style.display = 'inline-flex';
   });
 
   window.addEventListener('appinstalled', () => {
     deferredPrompt = null;
     closePWABanner();
+    const heroBtn = document.getElementById('heroInstallBtn');
+    if (heroBtn) heroBtn.style.display = 'none';
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const heroBtn = document.getElementById('heroInstallBtn');
+    if (heroBtn) {
+      heroBtn.addEventListener('click', () => {
+        if (!deferredPrompt) return;
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then(() => {
+          deferredPrompt = null;
+          heroBtn.style.display = 'none';
+        });
+      });
+    }
   });
 
   if ('serviceWorker' in navigator) {

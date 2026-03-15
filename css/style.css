@@ -107,6 +107,23 @@ nav a:hover { background: rgba(255,255,255,0.18); color: white; }
   margin: 0 auto;
   line-height: 1.7;
 }
+.hero-install-btn {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.2);
+  border: 2px solid rgba(255,255,255,0.6);
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 10px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+.hero-install-btn:hover { background: rgba(255,255,255,0.35); }
 
 .hero-tags {
   display: flex;
