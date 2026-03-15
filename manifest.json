@@ -1,0 +1,18 @@
+{
+  "name": "VSKit - VS Code 확장 프로그램 모음",
+  "short_name": "VSKit",
+  "description": "VS Code 필수 확장 프로그램 카테고리별 큐레이션",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F8FA",
+  "theme_color": "#374151",
+  "lang": "ko",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
