@@ -400,3 +400,64 @@ footer {
   background: rgba(255,255,255,0.12);
   color: white;
 }
+/* ───── Cross Link Tips ───── */
+.cross-link-tip {
+  margin-top: 16px;
+  padding: 10px 16px;
+  background: var(--primary-light, #f0f4ff);
+  border-left: 3px solid var(--primary, #4F46E5);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.85rem;
+  color: var(--text-light, #6B7280);
+}
+.cross-link-tip a {
+  color: var(--primary, #4F46E5);
+  font-weight: 600;
+  text-decoration: none;
+}
+.cross-link-tip a:hover { text-decoration: underline; }
+
+.cross-link-banner {
+  margin: 32px 0 0;
+  padding: 16px 20px;
+  background: var(--primary-light, #f0f4ff);
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.88rem;
+}
+.cross-link-banner span { color: var(--text, #1A1A2E); font-weight: 600; }
+.cross-link-banner a {
+  color: var(--primary, #4F46E5);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 4px 12px;
+  border: 1px solid var(--primary, #4F46E5);
+  border-radius: 20px;
+  font-size: 0.82rem;
+}
+.cross-link-banner a:hover { background: var(--primary, #4F46E5); color: white; }
+
+.hero-related {
+  margin-top: 16px;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.85);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.hero-related a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  background: rgba(255,255,255,0.2);
+  padding: 4px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.4);
+  font-size: 0.82rem;
+}
+.hero-related a:hover { background: rgba(255,255,255,0.35); }
