@@ -363,6 +363,7 @@ footer {
 
 /* ───── Our Sites Bar ───── */
 .our-sites-bar {
+  justify-content: center;
   background: #1A1A2E;
   padding: 8px 20px;
   display: flex;
