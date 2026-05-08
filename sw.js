@@ -1,4 +1,4 @@
-const CACHE_NAME = 'VSKit-v3';
+const CACHE_NAME = 'VSKit-v4';
 const ASSETS = ['/', '/index.html', '/css/style.css'];
 
 self.addEventListener('install', e => {
