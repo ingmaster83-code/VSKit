@@ -1,4 +1,4 @@
-(function() {
+﻿(function() {
   let deferredPrompt = null;
 
   window.addEventListener('beforeinstallprompt', e => {
@@ -82,7 +82,7 @@
     banner.innerHTML = `
       <div class="pwa-banner-icon">💻</div>
       <div class="pwa-banner-text">
-        <strong>VSKit - VS Code 확장 프로그램 모음 바로가기 추가</strong>
+        <strong> 바로가기 추가</strong>
         <span>앱처럼 설치해서 빠르게 접근하세요!</span>
       </div>
       <button class="pwa-btn-install" onclick="window.triggerPWAInstall()">설치하기</button>
