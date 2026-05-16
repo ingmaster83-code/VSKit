@@ -42,6 +42,12 @@
     .network-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-top: 8px; }
     .network-item { background: var(--primary-light); border-radius: var(--radius-sm); padding: 14px 16px; text-decoration: none; color: var(--primary); font-size: 0.85rem; font-weight: 600; display: flex; align-items: center; gap: 8px; transition: background 0.15s; }
     .network-item:hover { background: #E5E7EB; }
+  
+    .lang-switcher { display:flex; align-items:center; gap:4px; }
+    .lang-switcher a { color:rgba(255,255,255,0.7); text-decoration:none; font-size:0.8rem; font-weight:600; padding:3px 8px; border-radius:12px; transition:background 0.15s; }
+    .lang-switcher a.active { color:white; background:rgba(255,255,255,0.25); }
+    .lang-switcher a:hover { color:white; background:rgba(255,255,255,0.18); }
+    .lang-switcher span { color:rgba(255,255,255,0.3); font-size:0.75rem; }
   </style>
 </head>
 <body>
@@ -56,7 +62,12 @@
       <a href="index.html#languages">언어</a>
     </nav>
     <div class="header-right">
-      <a href="about.html" style="color:white; font-size:0.85rem; text-decoration:none; font-weight:600;">소개</a>
+      <div class="lang-switcher">
+        <a href="about.html" class="active">KO</a>
+        <span>|</span>
+        <a href="en/about.html">EN</a>
+      </div>
+      <a href="about.html" style="color:rgba(255,255,255,0.85); font-size:0.85rem; text-decoration:none; margin-left:8px;">소개</a>
     </div>
   </div>
 </header>
