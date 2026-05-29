@@ -1,7 +1,7 @@
 /**
  * wooa-sidebar-en.js (EN)
  * tool-sidebar / index-sidebar: AdSense(1419180025)
- * 인콘텐츠 광고는 wooahouse-originals-tool-en.js 에서 처리
+ * 도구 페이지 인콘텐츠 광고는 wooahouse-originals-tool-en.js 에서 처리
  * Coupang 없음 (EN 페이지)
  */
 (function () {

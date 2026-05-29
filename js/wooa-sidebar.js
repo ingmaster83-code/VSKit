@@ -1,8 +1,7 @@
 /**
  * wooa-sidebar.js (KO)
  * tool-sidebar / index-sidebar: AdSense(1419180025) + Coupang(974224)
- * 인콘텐츠 광고는 wooahouse-originals-tool.js 에서 처리
- * EN 페이지는 wooa-sidebar-en.js 사용
+ * 도구 페이지 인콘텐츠 광고는 wooahouse-originals-tool.js 에서 처리
  */
 (function () {
   function init() {
@@ -37,7 +36,7 @@
     (window.adsbygoogle = window.adsbygoogle || []).push({});
 
     // Coupang
-    var card2 = mkCard('margin-top:16px;overflow:hidden');
+    var coupangCard = mkCard('margin-top:16px;overflow:hidden');
     var coupangScript = document.createElement('script');
     coupangScript.src = 'https://ads-partners.coupang.com/g.js';
     coupangScript.async = true;
@@ -51,8 +50,8 @@
         height: '250'
       });
     };
-    card2.appendChild(coupangScript);
-    t.appendChild(card2);
+    coupangCard.appendChild(coupangScript);
+    t.appendChild(coupangCard);
 
     // 쿠팡 파트너스 고지
     var p = document.createElement('p');
