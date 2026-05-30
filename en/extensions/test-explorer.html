@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../../icons/icon.svg" type="image/svg+xml">
+  <title>Test Explorer UI VS Code Extension | WooaVS</title>
+  <meta name="description" content="Install Test Explorer UI VS Code extension. Run tests and view results from the sidebar. Hand-picked essential VS Code extensions by WooaVS.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vskit.wooahouse.com/en/extensions/test-explorer.html">
+  <link rel="alternate" hreflang="ko" href="https://vskit.wooahouse.com/extensions/test-explorer.html">
+  <link rel="alternate" hreflang="en" href="https://vskit.wooahouse.com/en/extensions/test-explorer.html">
+  <link rel="alternate" hreflang="x-default" href="https://vskit.wooahouse.com/en/extensions/test-explorer.html">
+  <meta property="og:title" content="Test Explorer UI VS Code Extension | WooaVS">
+  <meta property="og:description" content="Install Test Explorer UI VS Code extension. Run tests and view results from the sidebar. Hand-picked essential VS Code extensions by WooaVS.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vskit.wooahouse.com/en/extensions/test-explorer.html">
+  <meta property="og:locale" content="en_US">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Test Explorer UI","applicationCategory":"DeveloperApplication","operatingSystem":"VS Code","description":"Run tests and view results from the sidebar","offers":{"@type":"Offer","price":"0","priceCurrency":"KRW"},"url":"https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer"}
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZGENFSXWC"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9ZGENFSXWC');</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6464921081676309" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    .app-hero{background:linear-gradient(135deg,#111827 0%,#374151 60%,#6B7280 100%);padding:44px 20px 40px;text-align:center;}
+    .app-hero h1{color:white;font-size:2.2rem;font-weight:700;margin-bottom:10px;}
+    .app-hero .cat-badge{display:inline-block;background:rgba(255,255,255,.18);color:white;font-size:.8rem;font-weight:600;padding:4px 14px;border-radius:20px;border:1px solid rgba(255,255,255,.3);margin-bottom:14px;}
+    .app-hero p{color:rgba(255,255,255,.9);font-size:1rem;margin-bottom:20px;}
+    .btn-download{display:inline-block;background:white;color:#374151;font-weight:700;font-size:1rem;padding:12px 32px;border-radius:30px;text-decoration:none;box-shadow:0 4px 20px rgba(0,0,0,.2);transition:transform .15s,box-shadow .15s;}
+    .btn-download:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.25);}
+    .app-content{max-width:820px;margin:0 auto;padding:32px 20px 0;}
+    .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin:28px 0;}
+    .info-card{background:white;border-radius:12px;padding:16px 18px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+    .info-card .label{font-size:.73rem;color:#9CA3AF;font-weight:600;text-transform:uppercase;margin-bottom:4px;}
+    .info-card .value{font-size:.9rem;color:#1A1A2E;font-weight:600;word-break:break-all;}
+    .ext-id-card{background:#F8FAFC;border-radius:10px;padding:12px 16px;margin:12px 0 24px;font-family:monospace;font-size:.82rem;color:#374151;border:1px solid #E2E8F0;}
+    .section-title{font-size:1rem;font-weight:700;color:#1A1A2E;margin:28px 0 14px;padding-left:10px;border-left:3px solid #0891B2;}
+    .features-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;}
+    .features-list li{background:white;border-radius:10px;padding:11px 16px;font-size:.88rem;color:#374151;box-shadow:0 1px 4px rgba(0,0,0,.05);display:flex;align-items:center;gap:10px;}
+    .features-list li::before{content:'✓';color:#0891B2;font-weight:700;flex-shrink:0;}
+    .about-box{background:white;border-radius:12px;padding:20px 22px;box-shadow:0 1px 6px rgba(0,0,0,.05);font-size:.9rem;color:#374151;line-height:1.8;margin-bottom:24px;}
+    .breadcrumb{font-size:.8rem;color:#9CA3AF;margin-bottom:20px;}
+    .breadcrumb a{color:#374151;text-decoration:none;font-weight:600;}
+    .breadcrumb a:hover{text-decoration:underline;}
+    .tips-panel{background:#F9FAFB;border-radius:14px;padding:20px 24px;margin:28px 0 0;border:1px solid #E5E7EB;}
+    .tips-panel h3{color:#374151;font-size:.95rem;font-weight:700;margin-bottom:12px;}
+    .tips-panel ul{padding-left:18px;}
+    .tips-panel li{color:#4B5563;font-size:.85rem;line-height:1.7;margin-bottom:4px;}
+    .faq-section{margin:24px 0 40px;}
+    .faq-section h2{font-size:1.05rem;font-weight:700;margin-bottom:14px;color:#1A1A2E;}
+    .faq-section details{background:white;border-radius:10px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);}
+    .faq-section summary{padding:14px 18px;font-size:.88rem;font-weight:600;color:#1A1A2E;cursor:pointer;list-style:none;}
+    .faq-section summary::-webkit-details-marker{display:none;}
+    .faq-section summary::before{content:'＋';margin-right:8px;color:#0891B2;}
+    .faq-section details[open] summary::before{content:'－';}
+    .faq-section details p{padding:0 18px 14px;font-size:.85rem;color:#4B5563;line-height:1.7;}
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="../../index.html" class="logo">WooaVS</a>
+    <nav><a href="../index.html#ai-assist">Code Assist</a><a href="../index.html#themes">Themes</a><a href="../index.html#git">Git</a><a href="../index.html#debug">Debug</a><a href="../index.html#languages">Languages</a><a href="../index.html#productivity">Productivity</a><a href="../index.html#formatter">Formatter</a></nav>
+    <div class="header-right">
+      <a href="../../about.html" style="color:rgba(255,255,255,.85);font-size:.85rem;text-decoration:none;">About</a>
+    </div>
+  </div>
+</header>
+<script src="../../js/wooa-sites-bar.js"></script>
+<div class="app-hero">
+  <span class="cat-badge">🧪 Debug / Testing</span>
+  <h1>Test Explorer UI</h1>
+  <p>Run tests and view results from the sidebar</p>
+  <a href="https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer" target="_blank" rel="noopener noreferrer" class="btn-download">📦 Install in VS Code</a>
+</div>
+<div class="page-with-sidebar">
+<div class="app-content">
+  <div class="breadcrumb" style="margin-top:24px;">
+    <a href="../index.html">Home</a> &rsaquo; <a href="../index.html#debug">Debug / Testing</a> &rsaquo; Test Explorer UI
+  </div>
+  <div class="info-grid">
+    <div class="info-card"><div class="label">Category</div><div class="value">Debug / Testing</div></div>
+    <div class="info-card"><div class="label">Price</div><div class="value">무료</div></div>
+    <div class="info-card"><div class="label">Developer</div><div class="value">Holger Benl</div></div>
+    <div class="info-card"><div class="label">Platform</div><div class="value">VS Code</div></div>
+  </div>
+  <p class="section-title">Key Features</p>
+  <ul class="features-list"><li>Sidebar test browsing and execution</li><li>Multiple testing framework support</li><li>Pass/fail result visualization</li><li>Test history tracking</li><li>Completely free</li></ul>
+  <div class="wooa-orig-anchor"></div>
+  <p class="section-title" style="margin-top:32px;">About this Extension</p>
+  <div class="about-box">Test Explorer UI provides a sidebar for browsing, running, and viewing test results in VS Code. Works with adapters for Jest, Mocha, PyTest, and many other testing frameworks.</div>
+  <div class="tips-panel"><h3>💡 Tips</h3><ul><li>Always install from the <strong>official VS Code Marketplace</strong> only.</li><li>Test Explorer UI is available as <strong>무료</strong>. Restart VS Code after installation to activate.</li><li>Extensions ID: <code style="background:#F3F4F6;padding:2px 6px;border-radius:4px;font-size:.82rem;">hbenl.vscode-test-explorer</code></li></ul></div>
+  <div class="faq-section"><h2>Frequently Asked Questions</h2><details><summary>How do I install Test Explorer UI?</summary><p>Press Ctrl+Shift+X in VS Code to open the Extensions tab, then search for the name. Or click the install button above to go to the Marketplace directly.</p></details><details><summary>Is Test Explorer UI free?</summary><p>It is available as 무료. Install free from the Marketplace.</p></details><details><summary>Is it safe to install?</summary><p>All links go only to the official VS Code Marketplace. Always install extensions from the official Marketplace only.</p></details></div>
+</div>
+<aside class="tool-sidebar"></aside>
+</div>
+<footer class="footer"></footer>
+<script src="../../js/wooahouse-originals-tool-en.js"></script>
+<script src="../../js/pwa-install.js"></script>
+<script src="../../js/wooa-sidebar-en.js"></script>
+<script src="../../js/wooa-footer-en.js"></script>
+</body>
+</html>
