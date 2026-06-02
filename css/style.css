@@ -469,7 +469,7 @@ footer {
 .coupang-notice { font-size: 0.65rem; color: #9CA3AF; text-align: center; padding-top: 10px; border-top: 1px solid #374151; margin-top: 10px; }
 
 /* === Sidebar layout === */
-.index-with-sidebar { max-width:1260px; margin:0 auto; display:grid; grid-template-columns:1fr 300px; gap:24px; align-items:start; padding:0 20px; }
+.index-with-sidebar { max-width:1260px; margin:0 auto; display:grid; grid-template-columns:1fr 300px; gap:24px; align-items:start; padding:52px 20px 0; }
 .index-with-sidebar .tools-section { max-width:100%; margin:0; padding-left:0; padding-right:0; }
 .index-sidebar { position:sticky; top:76px; padding-top:40px; }
 .index-ad-card { background:#fff; border-radius:14px; box-shadow:0 2px 12px rgba(0,0,0,.08); padding:12px; margin-bottom:16px; }
